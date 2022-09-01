@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+:root {
+    --color-almostBlack: hsl(0, 0%, 8%);
+    --color-almostWhite: hsl(0, 0%, 98%);
+    --color-mediumGrey: hsl(0, 0%, 41%);
+    /* Font-size */
+    --fs-sm: 13px;
+    --fs-md: 18px;
+    --fs-lg: 23px;
+    --fs-xl: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--color-almostWhite);
+}
+body p {
+    font-size: 18px;
+}
+.btn {
+    border: 1px solid var(--color-mediumGrey);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.hidden {
+    display: none;
+}
+.box-shadow {
+    box-shadow: -1px 6px 17px rgba(0, 0, 0, 0.25);
+} 
+/* Navbar */
+nav.nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-menu {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+
+nav .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin-left: 70px;
+    align-items: center;
+    color: var(--color-mediumGrey);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    position: relative;
+}
+nav .nav-menu ul li:hover {
+    color: var(--color-almostBlack);
+    cursor: pointer;
+}
+nav .nav-menu ul li {
+    position: relative;
+}
+nav .nav-menu ul .dropdown-contents {
+    position: absolute;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 12px;
+    z-index: 1;
+}
+nav .nav-menu ul .dropdown-contents#drop1 { 
+    top: 28px;
+    left: -70px;
+}
+nav .nav-menu ul .dropdown-contents#drop2 {
+    top: 28px;
+    left: 0;
+}
+nav .nav-menu ul .dropdown-contents .dropdown-item {
+    display: flex;
+    gap: 15px;
+    padding: 7px;
+    cursor: pointer;
+}
+nav .nav-menu ul .dropdown-contents .dropdown-item span {
+    font-size: var(--fs-sm);
+}
+nav .nav-btns a {
+    text-decoration: none;
+    color: var(--color-mediumGrey);
+    margin-right: 30px;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+}
+nav .nav-btns a:hover {
+    color: var(--color-almostBlack);
+}

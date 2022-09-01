@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+      <nav class="nav">
+        <div class="nav-menu">
+          <img src="./images/logo.svg" alt="">
+          <ul>
+            <li id="droplist1" class="dropdown">Features <img src="./images/icon-arrow-down.svg" alt="">
+              <div id="drop1" class="dropdown-contents box-shadow hidden">
+                <div class="dropdown-item">
+                  <img src="./images/icon-todo.svg" alt=""><span>Todo List</span>
+                </div>
+                <div class="dropdown-item">
+                  <img src="./images/icon-calendar.svg" alt=""><span>Calendar</span>
+                </div>
+                <div class="dropdown-item">
+                  <img src="./images/icon-reminders.svg" alt=""><span>Reminders</span>
+                </div>
+                <div class="dropdown-item">
+                  <img src="./images/icon-planning.svg" alt=""><span>Planning</span>
+                </div>
+              </div>
+            </li> 
+            <li id="droplist2" class="dropdown">Company <img src="./images/icon-arrow-down.svg" alt="">
+              <div id="drop2" class="dropdown-contents box-shadow hidden">
+                <div class="dropdown-item">
+                  <span>History</span>
+                </div>
+                <div class="dropdown-item">
+                  <span>Our&nbsp;Team</span>
+                </div>
+                <div class="dropdown-item">
+                  <span>Blog</span>
+                </div>
+              </div>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="nav-btns">
+          <a href="#">Login</a>
+          <a href="#" class="btn">Register</a>
+        </div>
+      </nav>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
