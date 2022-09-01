@@ -8,6 +8,7 @@
     --fs-md: 18px;
     --fs-lg: 23px;
     --fs-xl: 30px;
+    --fs-2xl: 45px;
 }
 * {
     margin: 0;
@@ -31,37 +32,40 @@ body p {
 .box-shadow {
     box-shadow: -1px 6px 17px rgba(0, 0, 0, 0.25);
 } 
+.main-container {
+    min-height: 100vh;
+}
 /* Navbar */
 nav.nav {
-    min-height: 70px;
     display: flex;
     align-items: center;
+    padding: 15px;
+}
+.nav-logo {
+    flex: 10%;
+    text-align: center;
+}
+.nav-menu {
+    flex: 90%;
+    display: flex;
     justify-content: space-between;
-}
-
-nav .nav-menu {
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-}
-
-nav .nav-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 32px;
-    margin-left: 70px;
-    align-items: center;
-    color: var(--color-mediumGrey);
     font-size: var(--fs-sm);
-    font-weight: 500;
-    position: relative;
 }
-nav .nav-menu ul li:hover {
+.nav-mobile-menu {
+    display: none;
+}
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+.nav-menu ul li {
+    position: relative;
+    padding-left: 20px;
+    color: var(--color-mediumGrey);
+}
+.nav-menu ul li:hover {
     color: var(--color-almostBlack);
     cursor: pointer;
-}
-nav .nav-menu ul li {
-    position: relative;
 }
 nav .nav-menu ul .dropdown-contents {
     position: absolute;
@@ -72,11 +76,11 @@ nav .nav-menu ul .dropdown-contents {
 }
 nav .nav-menu ul .dropdown-contents#drop1 { 
     top: 28px;
-    left: -70px;
+    left: -50px;
 }
 nav .nav-menu ul .dropdown-contents#drop2 {
     top: 28px;
-    left: 0;
+    left: 50;
 }
 nav .nav-menu ul .dropdown-contents .dropdown-item {
     display: flex;
@@ -87,13 +91,52 @@ nav .nav-menu ul .dropdown-contents .dropdown-item {
 nav .nav-menu ul .dropdown-contents .dropdown-item span {
     font-size: var(--fs-sm);
 }
-nav .nav-btns a {
+.nav-btns a {
+    margin-right: 20px;
     text-decoration: none;
     color: var(--color-mediumGrey);
-    margin-right: 30px;
-    font-size: var(--fs-sm);
-    font-weight: 500;
 }
-nav .nav-btns a:hover {
+.nav-btns a:hover {
     color: var(--color-almostBlack);
+}
+/* Main Content */
+.main-content {
+    width: 100%;
+    display: flex; 
+    margin-top: 40px;
+}
+
+.text-items {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 80px;
+    padding-inline-start: 150px;
+
+}
+
+.text-items h1 {
+    font-size: 56px;
+}
+
+.text-items p {
+    font-size: 13px;
+}
+.text-items .client-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.image-container {
+    flex: 50%;
+    text-align: center;
+    padding: 80px;
+    padding-inline-end: 150px;
+
+}
+.image-container img {
+    width: 360px;
 }
