@@ -18,74 +18,71 @@
 </head>
 <body>
   <div class="main-container">
-      <nav class="nav">
-        <div class="nav-logo">
-          <img src="./images/logo.svg" alt="">
-        </div>
-        <div class="nav-mobile-menu">
-          <img src="./images/icon-menu.svg" alt="">
-          <img class="hidden" src="./images/icon-close-menu.svg" alt="">
-        </div>
-        <div class="nav-menu">
-          <ul>
-            <li id="droplist1" class="dropdown">Features <img src="./images/icon-arrow-down.svg" alt="">
-              <div id="drop1" class="dropdown-contents box-shadow hidden">
-                <div class="dropdown-item">
-                  <img src="./images/icon-todo.svg" alt=""><span>Todo List</span>
-                </div>
-                <div class="dropdown-item">
-                  <img src="./images/icon-calendar.svg" alt=""><span>Calendar</span>
-                </div>
-                <div class="dropdown-item">
-                  <img src="./images/icon-reminders.svg" alt=""><span>Reminders</span>
-                </div>
-                <div class="dropdown-item">
-                  <img src="./images/icon-planning.svg" alt=""><span>Planning</span>
-                </div>
+    <nav class="nav">
+      <a class="brand" href="#"><img id="brand-img" src="./images/logo.svg" alt=""></a>
+      <a class="mobile-nav-open hidden" href="#"><img id="mobile-nav-menu" src="./images/icon-menu.svg" alt=""></a>
+      <div class="nav-items">
+        <ul class="nav-menu">
+          <li>
+            <a id="drop1" href="#">Features <img id="brand-img" src="./images/icon-arrow-down.svg" alt=""></a>
+            <div id="dropdown1" class="dropdown-contents box-shadow hidden">
+              <div class="dropdown-items">
+                <img src="./images/icon-todo.svg" alt="">
+                <span>Todo List</span>
               </div>
-            </li> 
-            <li id="droplist2" class="dropdown">Company <img src="./images/icon-arrow-down.svg" alt="">
-              <div id="drop2" class="dropdown-contents box-shadow hidden">
-                <div class="dropdown-item">
-                  <span>History</span>
-                </div>
-                <div class="dropdown-item">
-                  <span>Our&nbsp;Team</span>
-                </div>
-                <div class="dropdown-item">
-                  <span>Blog</span>
-                </div>
+              <div class="dropdown-items">
+                <img src="./images/icon-calendar.svg" alt="">
+                <span>Calender</span>
               </div>
-            </li>
-            <li>Careers</li>
-            <li>About</li>
-          </ul> 
-          <div class="nav-btns">
-            <a href="#">Login</a>
-            <a href="#" class="btn">Register</a>
-          </div>
-        </div>
-      </nav>
-      <div class="main-content">
-        <div class="text-items">
-          <div>
-            <h1>Make</h1>
-            <h1>remote work</h1>
-          </div>
-          <p>Get your team in sync, no matter your location. Streamline processes, 
-            create team rituals, and watch productivity soar.</p>
-          <button class="btn">Learn More</button>
-          <div class="client-items">
-            <img src="./images/client-audiophile.svg" alt="">
-            <img src="./images/client-databiz.svg" alt="">
-            <img src="./images/client-maker.svg" alt="">
-            <img src="./images/client-meet.svg" alt="">
-          </div>
-        </div>
-        <div class="image-container">
-          <img src="./images/image-hero-desktop.png" alt="">
+              <div class="dropdown-items">
+                <img src="./images/icon-reminders.svg" alt="">
+                <span>Reminders</span>
+              </div>
+              <div class="dropdown-items">
+                <img src="./images/icon-planning.svg" alt="">
+                <span>Planning</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a id="drop2" href="#">Company <img id="brand-img" src="./images/icon-arrow-down.svg" alt=""></a>
+            <div id="dropdown2" class="dropdown-contents box-shadow hidden">
+              <div class="dropdown-items">
+                <span>History</span>
+              </div>
+              <div class="dropdown-items">
+                <span>Our Team</span>
+              </div>
+              <div class="dropdown-items">
+                <span>Blog</span>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="nav-btns">
+          <a id="login" href="#">Login</a>
+          <a class="btn" href="#">Register</a>
         </div>
       </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Make<br>remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="btn hero-btn">Learn More</button>
+        <div class="client-logo">
+          <img src="./images/client-databiz.svg" alt="">
+          <img src="./images/client-audiophile.svg" alt="">
+          <img src="./images/client-meet.svg" alt="">
+          <img src="./images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div class="hero-img">
+        <img class="desktop-img" src="./images/image-hero-desktop.png" alt="">
+      </div>
+    </div>
   </div>
   <script src="./js/index.js"></script>
 </body>
