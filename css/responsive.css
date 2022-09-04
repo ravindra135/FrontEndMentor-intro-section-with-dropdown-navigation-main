@@ -1,0 +1,30 @@
+@media (max-width:1200px) {
+    body {
+        background-color: red;
+    }
+
+    .hero {
+        gap: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 56px;
+    }
+
+    .hero-text p {
+        font-size: small;
+    }
+
+    .hero-img img {
+        width: 320px;
+    }
+}
+
+@media (max-width:900px) {
+    body {
+        background-color: green;
+    }
+    .hero {
+        flex-wrap: wrap-reverse;
+    }
+}

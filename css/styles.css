@@ -13,7 +13,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* transition: all 0.23s ease-in; */
 }
 body {
     font-family: 'Epilogue', sans-serif;
@@ -27,6 +26,7 @@ body p {
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
+    transition: all .23s ease-in-out;
 }
 .hidden {
     display: none;
@@ -45,6 +45,7 @@ a {
     font-size: var(--fs-sm);
     color: var(--color-mediumGrey);
     cursor: pointer;
+    transition: all .23s ease-in-out;
 }
 a:hover {
     color: var(--color-almostBlack);
@@ -84,7 +85,7 @@ ul.nav-menu li {
 .nav .nav-items .nav-btns a {
     margin-right: 50px;
 }
-
+/* Dropdown */
 .nav-menu .dropdown-contents {
     position: absolute;
     width: max-content;
@@ -150,7 +151,7 @@ button.hero-btn {
     padding: 15px 25px;
 }
 button.hero-btn:hover {
-    border: 1px solid var(--color-almostBlack);
+    border: 2px solid var(--color-almostBlack);
     background-color: transparent;
     color: var(--color-almostBlack);
 }
