@@ -38,7 +38,7 @@ body p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    padding-top: 50px;
 }
 a {
     text-decoration: none;
@@ -51,28 +51,24 @@ a:hover {
     color: var(--color-almostBlack);
 }
 /* Navbar */
-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+header {
     display: flex;
-    max-width: 100%;
-    padding: 25px;
-    align-items: center;
+    padding: 22px;
 }
 a.brand {
     display: flex;
     justify-content: center;
     margin-left: 50px;
-
 }
-.nav .nav-items {
+a.mobile-nav-open {
+    display: none;
+}
+nav.nav {
     display: flex;
-    flex: 70%;
     justify-content: space-between;
-    max-width: 100%;
+    width: 100%;
     margin-left: 80px;
+    align-items: center;
 }
 ul.nav-menu {
     display: flex;
@@ -82,7 +78,7 @@ ul.nav-menu {
 ul.nav-menu li {
     position: relative;
 }
-.nav .nav-items .nav-btns a {
+.nav .nav-btns a {
     margin-right: 50px;
 }
 /* Dropdown */
@@ -129,17 +125,19 @@ ul.nav-menu li {
     font-weight: 500;
     color: var(--color-mediumGrey);
     line-height: 2.5ch;
+    transition: all 0.23s ease-in-out;
 }
 .hero-text .client-logo {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.hero-img img {
+.hero-img picture img {
     flex: 50%;
     padding: 25px;
     width: 400px;
-
+    transition: all 0.23s ease-in-out;
 }
 button.hero-btn {
     max-width: fit-content;

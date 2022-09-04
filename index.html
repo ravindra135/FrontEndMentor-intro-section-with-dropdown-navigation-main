@@ -17,11 +17,12 @@
   </style>
 </head>
 <body>
-  <div class="main-container">
+  <header>
+    <div>
+      <a class="brand" href="#"><img id="brand-img" src="./images/logo.svg" alt=""></a>    
+      <a class="mobile-nav-open" href="#"><img id="mobile-nav-menu" src="./images/icon-menu.svg" alt=""></a>
+    </div>
     <nav class="nav">
-      <a class="brand" href="#"><img id="brand-img" src="./images/logo.svg" alt=""></a>
-      <a class="mobile-nav-open hidden" href="#"><img id="mobile-nav-menu" src="./images/icon-menu.svg" alt=""></a>
-      <div class="nav-items">
         <ul class="nav-menu">
           <li>
             <a id="drop1" href="#">Features <img id="brand-img" src="./images/icon-arrow-down.svg" alt=""></a>
@@ -65,11 +66,12 @@
           <a id="login" href="#">Login</a>
           <a class="btn" href="#">Register</a>
         </div>
-      </div>
     </nav>
+  </header>
+  <secttion class="main-container">
     <div class="hero">
       <div class="hero-text">
-        <h1>Make<br>remote work</h1>
+        <h1>Make <br>remote work</h1>
         <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
         <button class="btn hero-btn">Learn More</button>
         <div class="client-logo">
@@ -80,10 +82,14 @@
         </div>
       </div>
       <div class="hero-img">
-        <img class="desktop-img" src="./images/image-hero-desktop.png" alt="">
+        <picture>
+          <source media="(min-width:901px)" srcset="./images/image-hero-desktop.png">
+          <source media="(max-width:900px)" srcset="./images/image-hero-mobile.png">
+          <img src="./images/image-hero-desktop.png" alt="main_image">
+        </picture>
       </div>
     </div>
-  </div>
+  </section>
   <script src="./js/index.js"></script>
 </body>
 </html>

@@ -1,8 +1,4 @@
 @media (max-width:1200px) {
-    body {
-        background-color: red;
-    }
-
     .hero {
         gap: 1rem;
     }
@@ -15,16 +11,59 @@
         font-size: small;
     }
 
-    .hero-img img {
+    .hero-img picture img {
         width: 320px;
     }
 }
 
 @media (max-width:900px) {
-    body {
-        background-color: green;
+    a.brand {
+        margin-left: 5px;
+    }
+    a.mobile-nav-open {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        z-index: 1;
+    }
+    nav.nav {
+        display: none;
+    }
+    .main-container {
+        padding-top: 10px;
+        margin: 0 5px;
     }
     .hero {
         flex-wrap: wrap-reverse;
+        padding: 2px;
+        max-width: 100%;
+        
     }
+    .hero-text {
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        width: 100%;
+    }
+    .hero-text h1 {
+        font-size: 38px;
+    }
+    .hero-text h1 br {
+        display: none;
+    }
+    .hero-img picture img {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    max-width: 420px;
+    width: 100%;
+    }
+    .hero-text .client-logo {
+        gap: 15px;
+    }
+    .hero-text .client-logo img {
+        width: auto;
+    }
+    
 }
